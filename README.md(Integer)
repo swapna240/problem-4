@@ -1,0 +1,35 @@
+# problem2
+import java.util.Scanner;
+public class NumberSeriesGenerator{
+public static void main (String[] args) {
+Scanner scan=new Scanner(System.in);
+System.out.println("enter the number of terms in the series:);
+int n=scan.nextInt();
+System.out.println("series 1:");
+generateSeries1(n);
+System.out.println("/nseries 2:");
+generateSeries2(n);
+System.out.println("/nseries 3:");
+generateSeries3(n);
+scan.close();
+}
+public static void generateSeries1(int n) {
+for(int i=1;i<=n;i++) {
+System.out.print(i+" ");
+}
+}
+public static void generateSeries2(int n) {
+int num=1;
+for(int i=1;i<=n;i++) {
+System.out.print(num+" ");
+num +=3;
+}
+}
+public static void generateSeries3(int n) {
+for(int i=1;i<=n;i++) {
+System.out.print(i+" ");
+}
+}
+}
+}
+
